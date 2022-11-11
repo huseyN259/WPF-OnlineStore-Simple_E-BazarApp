@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="E_Bazar.UserControls.UC_Product"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:E_Bazar.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="325">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Source="/UserControls/OIP.jfif" Width="300" Grid.Row="0" Name="image1"></Image>
+        <Border Grid.Row="1" BorderBrush="MediumVioletRed" BorderThickness="4" CornerRadius="25" Width="200" Background="LawnGreen">
+            <Button Click="Button_Click">DETAILS</Button>
+        </Border>
+    </Grid>
+</UserControl>

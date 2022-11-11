@@ -1,0 +1,29 @@
+﻿<Window x:Class="E_Bazar.Views.AddView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E_Bazar.Views"
+        mc:Ignorable="d"
+        Title="ADD PAGE" Height="370" Width="400" WindowStartupLocation="CenterScreen" MinHeight="370" MinWidth="400" MaxWidth="400" MaxHeight="370" Background="Yellow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Product Name" FontSize="26"></TextBlock>
+        <TextBox Grid.Row="1" Foreground="Black" FontSize="26" Name="nametxtbox"></TextBox>
+        <TextBlock Text="Description " Grid.Row="2" FontSize="26"></TextBlock>
+        <TextBox Grid.Row="3"  Foreground="Black"  FontSize="26" Name="desctxtbox"></TextBox>
+        <TextBlock Text="Price" FontSize="26" Grid.Row="4"></TextBlock>
+        <TextBox Grid.Row="5"  Foreground="Black"  FontSize="26" Name="pricetxtbox"></TextBox>
+
+        <Button Grid.Row="6" Content="Add" Background="Yellow" Click="Button_Click"></Button>
+    </Grid>
+</Window>
